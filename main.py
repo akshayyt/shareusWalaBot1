@@ -25,10 +25,10 @@ User = Client(
 
 @Bot.on_message(filters.private & filters.command("start"))
 async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/08ce29db269b279061d94.jpg",
+	await event.reply_photo("https://te.legra.ph/file/1de5c64e32cca2c9250b5.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-                                    [InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies"),
+                                    [InlineKeyboardButton("Our Channel", url="https://t.me/+1qdEeHOTLdQ1M2Vl"),
                                      InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup")],
                                     [InlineKeyboardButton("Help", callback_data="Help_msg"),
                                      InlineKeyboardButton("About", callback_data="About_msg")]]))
@@ -38,8 +38,8 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies"),
-             InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup"), 
+            [InlineKeyboardButton("Our Channel", url="https://t.me/+1qdEeHOTLdQ1M2Vl"),
+             InlineKeyboardButton("Our Group", url="https://t.me/+CG7AQS6IfUNhYTNl"), 
              InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
@@ -77,11 +77,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies"),
-						InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup")
+						InlineKeyboardButton("Our Channel", url="https://t.me/+1qdEeHOTLdQ1M2Vl"),
+						InlineKeyboardButton("Our Group", url="https://t.me/+CG7AQS6IfUNhYTNl")
 					],
 					[
-						InlineKeyboardButton("Developer", url="https://t.me/RoyalKrrishna"),
+						InlineKeyboardButton("Developer", url="https://t.me/Akshay_Chand"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -96,10 +96,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies")
+						InlineKeyboardButton("Our Channel", url="https://t.me/+1qdEeHOTLdQ1M2Vl")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/RoyalKrrishna"),
+						InlineKeyboardButton("Owner", url="https://t.me/Akshay_Chand"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -117,8 +117,8 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support", url="https://t.me/RoyalKrrishna"),
-						InlineKeyboardButton("Channel", url="https://t.me/iP_Movies")
+						InlineKeyboardButton("Support", url="https://t.me/Akshay_Chand"),
+						InlineKeyboardButton("Channel", url="https://t.me/+1qdEeHOTLdQ1M2Vl")
 					]
 				]
 			),
